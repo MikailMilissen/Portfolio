@@ -1,0 +1,8 @@
+.Navbar {
+        margin-left: 100px;
+        box-sizing: border-box;
+        display: flex;
+        color: black;
+        font-size: 30px;
+        
+}
