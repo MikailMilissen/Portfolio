@@ -4,5 +4,7 @@
         display: flex;
         color: black;
         font-size: 30px;
-        
+        margin: 10px;
+        align-items:center;
+        justify-content: space-between;
 }
