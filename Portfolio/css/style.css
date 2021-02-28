@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none !important;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 html {
@@ -49,7 +50,7 @@ ul.menu{
 }
 
 .navbar .logo{
-    color: white;
+    color: rgba(0, 0, 0);
     font-size: 35px;
     font-weight: 600;
     padding: 0 60px;
@@ -68,9 +69,10 @@ ul.menu{
 }
 
 .navbar .menu li a:hover{
-    color: rgb(187, 181, 182);
+    color: rgb(0, 0, 0);
+    transition: color 0.5s ease;
     border-bottom: 4px black;
-    text-decoration: underline !important;
+    
    
 }
 
@@ -84,7 +86,7 @@ ul.menu{
     display: none;
     position: absolute;
     right: 20px;
-    color: rgb(129, 120, 120);
+    color: rgb(255, 255, 255);
     transition: color 0.3s ease;
 
 }
@@ -118,7 +120,7 @@ ul.menu{
 }
 /* Front-page */
 .frontpage{
-    background: rgb(17,19,23);
+    background: whitesmoke;
     height: 100vh;
 }
 /* Home Section */
@@ -128,38 +130,34 @@ ul.menu{
 }
 
 .home-content{
-    text-align: center;
+   
     top:50%;
-    left: 50%;
+    left: 40%;
     color: rgb(44, 44, 44);
     transform: translate3d(-50%,-50%, 0);
     position: absolute;
 }
 
-.home .home-content .text-1{
-    font-size: 27px;
+.home .home-content .text-1 h1{
+    font-size: 100px;
+    font-weight: 700;
+    color: rgb(17,19,23);
 }
 
-.home .home-content .text-2{
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-    
-}
 
-.home .home-content .text-2 span{
+
+.home .home-content .text-1 p{
+    font-size: 30px;
+    font-weight: 700;
+    background-color: rgb(17,19,23); 
+    color:white;
+} 
+
+.home .home-content .text-1 span{
     color:crimson;
 } 
 
-.home .home-content .text-3{
-    font-size: 40px;
-    margin: 5px 0;
-}
 
-.home .home-content .text-3 span{
-    color: crimson;
-    font-weight: 500;
-}
 
 .line{
     
@@ -168,7 +166,7 @@ ul.menu{
 }
 
 .button_down button{
-    border-radius: 10px;
+    border-radius: 1px;
     background: transparent;
     color: crimson;
     transition: all 0.3s ease;
@@ -177,6 +175,7 @@ ul.menu{
     top: 90%;
     left: 50%;
 }
+
 
 
 /* About Section */
@@ -191,13 +190,50 @@ ul.menu{
    position: absolute;
    top: 10%;
    left: 15%;
-   right: 15%;
+   right: 45%;
+
+}
+.about-content button{
+    border-radius: 1px;
+    background: transparent;
+    color: crimson;
+    transition: all 0.3s ease;
 }
 
 .about-content h1{
     font-size: 70px;
     font-weight: 700;
   
+}
+
+.about-content img{
+position: absolute;
+width: 330px;
+top: 0%;
+left: 110%;
+
+
+}
+
+.about-skills{
+position: absolute;
+   top: 50%;
+   left: 15%;
+   right: 15%;
+}
+
+.about-skills h1{
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.about-skills h3{
+    font-size: 20px;
+    font-weight: 700;
+    background: rgba(220, 20, 60, 0.788);
+    padding: 5px;
+    color: whitesmoke;
+    
 }
 
 
@@ -262,29 +298,37 @@ ul.menu{
 
 #contact{
     height: 100vh;
-    color: white;
-    background: url(../pictures/forest-931706_1920.jpg) no-repeat;
-    background-size: cover;
+    color:whitesmoke;
+    background-color: rgb(17,19,23); 
+    
     position: relative;
   
 }
 
-#contact .contact-text{
-    top: 20%;
-    left: 50%;
+.contact-text{
+    top: 10%;
+    left: 15%;
+    
     position: absolute;
-    transform: translate3d(-50%,-50%, 0);
+}
+
+.contact-text h1{
+    font-size: 70px;
+    font-weight: 700;
+    
 }
 
 .contactform{
-    background-color:rgba(0,0,0,0.6);
-
+    
+    border-style: solid ;
+    border-radius: 3px;
+    
+    border-color: whitesmoke;
     top:50%;
     left: 50%;
     transform: translate3d(-50%,-50%, 0);
     position: absolute;
     padding: 30px;
-    border-radius: 5px;
     display: flex;
    
 }
@@ -306,9 +350,9 @@ ul.menu{
     margin: 10px;
     background: transparent;
     border: 0;
-    border-bottom: 2px solid #c5ecfd;
+    border-bottom: 2px solid whitesmoke;
     padding: 10px;
-    color:#c5ecfd ;
+    color:whitesmoke;
     width: 100%;
 }
 
@@ -336,16 +380,43 @@ ul.menu{
     color: #c5ecfd;
 }
 
-.btn{
-    background: #39b7dd;
-    text-align: center;
-    padding: 15px;
-    border-radius: 5px;
-    cursor: pointer;
+#contact button{
+    border-radius: 1px;
+    background: transparent;
+    color: crimson;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 90%;
+}
+
+#contact hr{
+    background-color: crimson;
+}
+
+#contact .contact-social{
+    position: absolute;
+    top:50%;
+    left: 20%;
+    transform: translate3d(-50%,-50%, 0);
+    
+}
+
+#contact .contact-social i{
+    padding: 40px;
 }
 
 @media screen and (max-width:600px){
     .contactform{
         flex-direction: column;
     }
+    #contact button{
+        position: absolute;
+        top: 90%;
+        left: 70%;
+    }
+}
+
+#footer{
+    height: 5vh;
+    background: whitesmoke;
 }
