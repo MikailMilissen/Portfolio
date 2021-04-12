@@ -12,18 +12,13 @@ html {
 	scroll-behavior: smooth;
 }
 
-
-
-
-
 /* Navbar-section */
 
 .navbar{
-  
    position: fixed;
    width: 100%;
    padding: 30px 0 !important;
-    font-family: 'Ubuntu', sans-serif;
+font-family: 'Ubuntu', sans-serif;
 }
 
 .navbar .logo span{
@@ -120,7 +115,8 @@ ul.menu{
 }
 /* Front-page */
 .frontpage{
-    background: whitesmoke;
+    background: #efefef;
+   
     height: 100vh;
 }
 /* Home Section */
@@ -144,8 +140,6 @@ ul.menu{
     color: rgb(17,19,23);
 }
 
-
-
 .home .home-content .text-1 p{
     font-size: 30px;
     font-weight: 700;
@@ -157,12 +151,22 @@ ul.menu{
     color:crimson;
 } 
 
-
-
 .line{
-    
     background-color: rgb(128, 92, 92);
-    
+}
+
+.stripe{
+    position: absolute;
+    z-index: -1;
+    width: 1100px;
+    margin-top: -200px;
+}
+
+.arrow-down{
+    position: absolute;
+    width: 600px;
+    margin-top: 54em;
+    margin-left: 6em;
 }
 
 .button_down button{
@@ -247,14 +251,18 @@ position: absolute;
 }
 
 .projects-content{
-
     top: 10%;
     left: 15%;
     right: 15%;
     position: absolute;
     color:rgba(0, 0, 0, 0.808);
     font-size: 30px;
-   
+}
+
+
+
+.projects-content i{
+    font-size: 23px;
 }
 
 .projects-content h1{
@@ -272,23 +280,29 @@ position: absolute;
     font-size: 20px
 }
 
-
 .project1{
-    
     color:rgba(0, 0, 0, 0.808);
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
-
-
-
 
 .project2{
     color:rgba(0, 0, 0, 0.808);
 }
 
-
-
 .project3{
     color:rgba(0, 0, 0, 0.808);
+}
+
+.project1:hover{
+    background-color: rgba(0, 0, 0, 0.808);
+    color: blanchedalmond;
+    transition: 0.4s ease;
+}
+.project2:hover{
+    background-color: rgba(0, 0, 0, 0.808);
+    color: blanchedalmond;
+    transition: 0.4s ease;
 }
 
 
@@ -300,7 +314,6 @@ position: absolute;
     height: 100vh;
     color:whitesmoke;
     background-color: rgb(17,19,23); 
-    
     position: relative;
   
 }
@@ -319,79 +332,28 @@ position: absolute;
 }
 
 .contactform{
-    
     border-style: solid ;
     border-radius: 3px;
-    
     border-color: whitesmoke;
     top:50%;
     left: 50%;
     transform: translate3d(-50%,-50%, 0);
     position: absolute;
     padding: 30px;
-    display: flex;
-   
 }
 
-.input-fields{
-    display: flex;
-    flex-direction: column;
-    margin-right: 4%;
 
+
+.contactform p{
+    font-style: italic;
 }
 
-.input-fields,
-.msg{
-    width: 48%;
-}
-
-.input-fields .input,
-.msg textarea{
-    margin: 10px;
-    background: transparent;
-    border: 0;
-    border-bottom: 2px solid whitesmoke;
-    padding: 10px;
-    color:whitesmoke;
-    width: 100%;
-}
-
-.input-fields .input:focus{
-    outline: none;
-}
-
-.msg textarea{
-    height: 212px;
-}
-
-.msg textarea:focus{
-    outline: none;
-}
-
-::-webkit-input-placeholder{
-    color: #c5ecfd;
-}
-
-::-moz-input-placeholder{
-    color: #c5ecfd;
-}
-
-::-ms-input-placeholder{
-    color: #c5ecfd;
-}
-
-#contact button{
-    border-radius: 1px;
-    background: transparent;
+.contactform h1{
     color: crimson;
-    transition: all 0.3s ease;
-    position: absolute;
-    left: 90%;
+    transition: 0.4s ease;
 }
 
-#contact hr{
-    background-color: crimson;
-}
+
 
 #contact .contact-social{
     position: absolute;
@@ -405,16 +367,8 @@ position: absolute;
     padding: 40px;
 }
 
-@media screen and (max-width:600px){
-    .contactform{
-        flex-direction: column;
-    }
-    #contact button{
-        position: absolute;
-        top: 90%;
-        left: 70%;
-    }
-}
+
+
 
 #footer{
     height: 5vh;
